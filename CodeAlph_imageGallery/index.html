@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+           <img src="img/Elegant Black and Beige Gallery Logo.png" alt="image gallery logo">
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#gallery">Gallery</a></li>
+
+            <li><a href="#categories">Categories</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <header class="banner" id="home">
+
+        <div class="overlay">
+
+            <h1>IMAGE GALLERY</h1>
+
+            <h3>Capture Every Beautiful Moment</h3>
+
+            <a href="#gallery" class="explore-btn">
+
+                Explore Gallery
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= FEATURED CAROUSEL ================= -->
+
+    <section class="home-section">
+
+        <h2>Featured Collection</h2>
+
+        <div class="carousel-wrapper">
+
+            <button class="prev-btn">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="circle-carousel">
+
+                <img src="img/carousel1.jpg" class="circle-item">
+                <img src="img/carousel2.jpg" class="circle-item">
+                <img src="img/carousel3.jpg" class="circle-item">
+                <img src="img/carousel4.jpg" class="circle-item">
+                <img src="img/carousel5.jpg" class="circle-item">
+                <img src="img/carousel6.jpg" class="circle-item">
+
+            </div>
+
+            <button class="next-btn">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery">
+
+        <h2>Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <div class="image-card">
+
+                <img src="img/nature.jpg" data-category="nature">
+
+                <div class="image-text">
+                    Nature
+                </div>
+
+            </div>
+
+            <div class="image-card">
+
+                <img src="img/friends.jpg" data-category="friends">
+
+                <div class="image-text">
+                    Friends
+                </div>
+
+            </div>
+
+            <div class="image-card">
+
+                <img src="img/animal.jpg" data-category="animals">
+
+                <div class="image-text">
+                    Animals
+                </div>
+
+            </div>
+
+            <div class="image-card">
+
+                <img src="img/waterfall.jpg" data-category="nature">
+
+                <div class="image-text">
+                    Waterfall
+                </div>
+
+            </div>
+
+            <div class="image-card">
+
+                <img src="img/bestfriend.jpg" data-category="friends">
+
+                <div class="image-text">
+                    Best Friends
+                </div>
+
+            </div>
+
+            <div class="image-card">
+
+                <img src="img/cat.jpg" data-category="animals">
+
+                <div class="image-text">
+                    Cute Cat
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section id="categories">
+
+        <h2>Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card" data-filter="all">
+
+                <i class="fa-solid fa-images"></i>
+
+                <h3>All</h3>
+
+            </div>
+
+            <div class="category-card" data-filter="nature">
+
+                <i class="fa-solid fa-tree"></i>
+
+                <h3>Nature</h3>
+
+            </div>
+
+            <div class="category-card" data-filter="friends">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                <h3>Friends</h3>
+
+            </div>
+
+            <div class="category-card" data-filter="animals">
+
+                <i class="fa-solid fa-paw"></i>
+
+                <h3>Animals</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="light-prev">❮</button>
+
+        <img class="lightbox-image">
+
+        <button class="light-next">❯</button>
+
+    </div>
+
+
+    <!-- ================= TOP BUTTON ================= -->
+
+    <button id="topBtn">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>Image Gallery</h2>
+
+        <p>
+
+            Explore beautiful moments captured forever.
+
+        </p>
+
+        <div class="social-icons">
+
+            <i class="fab fa-facebook"></i>
+
+            <i class="fab fa-instagram"></i>
+
+            <i class="fab fa-twitter"></i>
+
+            <i class="fab fa-github"></i>
+
+        </div>
+
+        <p>
+
+            © 2026 All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
