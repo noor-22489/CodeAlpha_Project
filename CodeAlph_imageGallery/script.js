@@ -1,7 +1,3 @@
-// ================================
-// CIRCULAR CAROUSEL
-// ================================
-
 const circleItems = document.querySelectorAll(".circle-item");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
@@ -23,7 +19,6 @@ function arrangeCarousel() {
         item.style.left = `${200 + x}px`;
         item.style.top = `${200 + y}px`;
 
-        // Scale and opacity for pseudo-3D effect
         const scale = (y + radius) / (2 * radius);
 
         item.style.transform = `translate(-50%, -50%) scale(${0.6 + scale * 0.6})`;
@@ -84,10 +79,6 @@ setInterval(() => {
     arrangeCarousel();
 
 }, 3000);
-
-// ================================
-// CAROUSEL IMAGE ENLARGE
-// ================================
 
 const carouselItems = document.querySelectorAll(".circle-item");
 
